@@ -1,0 +1,482 @@
+{
+	"info": {
+		"_postman_id": "8fe5b962-8d4c-43b3-a763-20ac716d7bbe",
+		"name": "MsApiTokensBGR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10040224"
+	},
+	"item": [
+		{
+			"name": "PlantillaToken",
+			"item": [
+				{
+					"name": "PlantillaToken/ObtenerTodo",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"Auditoria\": {\r\n    \"IdentificadorGUID\": \"6927cb6e-70e6-4ba8-a485-7dd7c452e115\",\r\n    \"IdAplicacionCliente\": \"1111111111\",\r\n    \"Identificacion\": \"1111111111\",\r\n    \"codigoCanal\": \"2\",\r\n    \"codigoTransaccion\": \"307\",\r\n    \"codigoMedioInvocacion\": \"9\",\r\n    \"IpCliente\": \"1.1.1.1\",\r\n    \"Usuario\": \"prueba\",\r\n    \"HashMobil\": \"1\",\r\n    \"Celular\": \"0980808131\",\r\n    \"CodigoAgencia\": \"1\",\r\n    \"CodigoCentro\": \"1\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7267/api/PlantillaToken/ObtenerTodo",
+							"host": [
+								"https://localhost:7267"
+							],
+							"path": [
+								"api",
+								"PlantillaToken",
+								"ObtenerTodo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PlantillaToken/ObtenerPorId",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"auditoria\": {\r\n    \"IdentificadorGUID\": \"1123123\",\r\n    \"IdAplicacionCliente\": \"aasdfasf\",\r\n    \"Identificacion\": \"1222222222\",\r\n    \"codigoCanal\": \"2\",\r\n    \"codigoTransaccion\": \"307\",\r\n    \"codigoMedioInvocacion\": \"9\",\r\n    \"ipCliente\": \"172.20.70.100\",\r\n    \"usuario\": \"bduarte\",\r\n    \"HashMobil\": \"false\",\r\n    \"Celular\": \"0000000000\",\r\n    \"codigoAgencia\": \"1\",\r\n    \"codigoCentro\": \"1\"\r\n  },\r\n  \"IdPlantilla\": 1028\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7267/api/PlantillaToken/ObtenerPorId",
+							"host": [
+								"https://localhost:7267"
+							],
+							"path": [
+								"api",
+								"PlantillaToken",
+								"ObtenerPorId"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PlantillaToken/Crear",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Auditoria\": {\r\n    \"IdentificadorGUID\": \"213123\",\r\n    \"IdAplicacionCliente\": \"aasdfasf\",\r\n    \"Identificacion\": \"1222222222\",\r\n    \"codigoCanal\": \"2\",\r\n    \"codigoTransaccion\": \"307\",\r\n    \"codigoMedioInvocacion\": \"9\",\r\n    \"IpCliente\": \"172.20.70.100\",\r\n    \"Usuario\": \"bduarte\",\r\n    \"HashMobil\": \"false\",\r\n    \"Celular\": \"0000000000\",\r\n    \"CodigoAgencia\": \"1\",\r\n    \"CodigoCentro\": \"1\"\r\n  },\r\n  \"NombrePlantilla\": \"TOKEN DATOS PLANTILLA - BDUARTE\",\r\n  \"CodigoProductoSiglo\": \"44\",\r\n  \"LongitudToken\": 6,\r\n  \"IncluyeLetras\": false,\r\n  \"EsCalendarizado\": false,\r\n  \"CodigoCanal\": \"2\",\r\n  \"CodigoMedioInvocacion\": \"9\",\r\n  \"PlantillaNotificacion\": \"4000000000003327\",\r\n  \"TituloNotificacion\": \"CÓDIGO CUENTA SALUD\",\r\n  \"DescripcionNotificacion\": \"Tu código de asesor para apertura de Cuenta Salud es:\",\r\n  \"AsuntoNotificacion\": \"Código de Seguridad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7267/api/PlantillaToken/Crear",
+							"host": [
+								"https://localhost:7267"
+							],
+							"path": [
+								"api",
+								"PlantillaToken",
+								"Crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PlantillaToken/Actualizar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Auditoria\": {\r\n    \"IdentificadorGUID\": \"213123\",\r\n    \"IdAplicacionCliente\": \"aasdfasf\",\r\n    \"Identificacion\": \"1222222222\",\r\n    \"codigoCanal\": \"2\",\r\n    \"codigoTransaccion\": \"307\",\r\n    \"codigoMedioInvocacion\": \"9\",\r\n    \"IpCliente\": \"172.20.70.100\",\r\n    \"Usuario\": \"bduarte\",\r\n    \"HashMobil\": \"false\",\r\n    \"Celular\": \"0000000000\",\r\n    \"CodigoAgencia\": \"1\",\r\n    \"CodigoCentro\": \"1\"\r\n  },\r\n  \"IdPlantilla\": 1027,\r\n  \"NombrePlantilla\": \"TOKEN PARA ACTUALIZAR\",\r\n  \"CodigoProductoSiglo\": \"33\",\r\n  \"LongitudToken\": 15,\r\n  \"incluyeLetras\": false,\r\n  \"CodigoCanal\": \"2\",\r\n  \"CodigoMedioInvocacion\": \"9\",\r\n  \"PlantillaNotificacion\": \"4000000000003327\",\r\n  \"TituloNotificacion\": \"PRUEBA ACTUALIZACIÓN - BDUARTE\",\r\n  \"DescripcionNotificacion\": \"Tu código es:\",\r\n  \"AsuntoNotificacion\": \"Código de Pruebas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7267/api/PlantillaToken/Actualizar",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7267",
+							"path": [
+								"api",
+								"PlantillaToken",
+								"Actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PlantillaToken/Eliminar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"auditoria\": {\r\n    \"IdentificadorGUID\": \"213123\",\r\n    \"IdAplicacionCliente\": \"aasdfasf\",\r\n    \"Identificacion\": \"1222222222\",\r\n    \"codigoCanal\": \"2\",\r\n    \"codigoTransaccion\": \"307\",\r\n    \"codigoMedioInvocacion\": \"9\",\r\n    \"ipCliente\": \"172.20.70.100\",\r\n    \"usuario\": \"bduarte\",\r\n    \"HashMobil\": \"false\",\r\n    \"Celular\": \"0000000000\",\r\n    \"codigoAgencia\": \"1\",\r\n    \"codigoCentro\": \"1\"\r\n  },\r\n    \"idPlantilla\": 99\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7267/api/PlantillaToken/Eliminar",
+							"host": [
+								"https://localhost:7267"
+							],
+							"path": [
+								"api",
+								"PlantillaToken",
+								"Eliminar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TokenManager",
+			"item": [
+				{
+					"name": "TokenManager/GenerarToken",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"Auditoria\": {\r\n    \"IdentificadorGUID\": \"213123\",\r\n    \"IdAplicacionCliente\": \"aasdfasf\",\r\n    \"Identificacion\": \"1222222222\",\r\n    \"codigoCanal\": \"2\",\r\n    \"codigoTransaccion\": \"307\",\r\n    \"codigoMedioInvocacion\": \"9\",\r\n    \"ipCliente\": \"172.20.70.100\",\r\n    \"usuario\": \"bduarte\",\r\n    \"HashMobil\": \"false\",\r\n    \"Celular\": \"0000000000\",\r\n    \"codigoAgencia\": \"1\",\r\n    \"codigoCentro\": \"1\"\r\n  },\r\n  \"Asociado\": {\r\n    \"Codigo\": \"BDUARTE\",\r\n    \"Tipo\": \"ASESOR\",\r\n    \"Email\": \"badm4651@bgr.com.ec\"\r\n  },\r\n  \"InformacionToken\": {\r\n    \"NombreToken\": \"TOKEN CALENDARIZADO WIN SERVICE - BDUARTE\",\r\n    \"LimiteUsos\": true,\r\n    \"CantidadLimiteUsos\": 10,\r\n    \"Tags\": \"Finanzas|Campaña Gobierno|Online\",\r\n    \"FechaInicio\": \"2025-02-21T00:00:00\",\r\n    \"FechaFin\": \"2025-09-01T00:00:00\",\r\n    \"IdPlantillaToken\": 1033,\r\n    \"DiasActualizaAuto\": \"L|M|V\",\r\n    \"TipoCalendarizacion\": \"SEMANAL\",\r\n    \"FechaRefrescar\": \"2025-02-18T17:00:15.088Z\",\r\n    \"Activo\": true\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7267/api/TokenManager/GenerarToken",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7267",
+							"path": [
+								"api",
+								"TokenManager",
+								"GenerarToken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TokenManager/ValidarReglasToken",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"Auditoria\": {\r\n    \"IdentificadorGUID\": \"213123\",\r\n    \"IdAplicacionCliente\": \"aasdfasf\",\r\n    \"Identificacion\": \"1222222222\",\r\n    \"codigoCanal\": \"2\",\r\n    \"codigoTransaccion\": \"307\",\r\n    \"codigoMedioInvocacion\": \"9\",\r\n    \"ipCliente\": \"172.20.70.100\",\r\n    \"usuario\": \"bduarte\",\r\n    \"HashMobil\": \"false\",\r\n    \"Celular\": \"0000000000\",\r\n    \"codigoAgencia\": \"1\",\r\n    \"codigoCentro\": \"1\"\r\n  },\r\n  \"Token\": \"33\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7267/api/TokenManager/ValidarReglasToken",
+							"host": [
+								"https://localhost:7267"
+							],
+							"path": [
+								"api",
+								"TokenManager",
+								"ValidarReglasToken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TokenManager/ObtenerTokensPorIdPlantilla",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"Auditoria\": {\r\n    \"IdentificadorGUID\": \"213123\",\r\n    \"IdAplicacionCliente\": \"aasdfasf\",\r\n    \"Identificacion\": \"1222222222\",\r\n    \"codigoCanal\": \"2\",\r\n    \"codigoTransaccion\": \"307\",\r\n    \"codigoMedioInvocacion\": \"9\",\r\n    \"ipCliente\": \"172.20.70.100\",\r\n    \"usuario\": \"bduarte\",\r\n    \"HashMobil\": \"false\",\r\n    \"Celular\": \"0000000000\",\r\n    \"codigoAgencia\": \"1\",\r\n    \"codigoCentro\": \"1\"\r\n  },\r\n  \"IdPlantilla\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7267/api/TokenManager/ObtenerTokensPorIdPlantilla",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7267",
+							"path": [
+								"api",
+								"TokenManager",
+								"ObtenerTokensPorIdPlantilla"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TokenManager/ActualizarBitacora",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"Auditoria\": {\r\n    \"IdentificadorGUID\": \"213123\",\r\n    \"IdAplicacionCliente\": \"aasdfasf\",\r\n    \"Identificacion\": \"1222222222\",\r\n    \"codigoCanal\": \"2\",\r\n    \"codigoTransaccion\": \"307\",\r\n    \"codigoMedioInvocacion\": \"9\",\r\n    \"ipCliente\": \"172.20.70.100\",\r\n    \"usuario\": \"bduarte\",\r\n    \"HashMobil\": \"false\",\r\n    \"Celular\": \"0000000000\",\r\n    \"codigoAgencia\": \"1\",\r\n    \"codigoCentro\": \"1\"\r\n  },\r\n  \"CodigoAsociado\": \"777\",\r\n  \"IdToken\":739,\r\n  \"IdentificacionCliente\": \"1206384651\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7267/api/TokenManager/ActualizarBitacora",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7267",
+							"path": [
+								"api",
+								"TokenManager",
+								"ActualizarBitacora"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TokenManager/ObtenerTokenPorId",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"Auditoria\": {\r\n    \"IdentificadorGUID\": \"6927cb6e-70e6-4ba8-a485-7dd7c452e115\",\r\n    \"IdAplicacionCliente\": \"1111111111\",\r\n    \"Identificacion\": \"1111111111\",\r\n    \"codigoCanal\": \"2\",\r\n    \"codigoTransaccion\": \"307\",\r\n    \"codigoMedioInvocacion\": \"9\",\r\n    \"IpCliente\": \"1.1.1.1\",\r\n    \"Usuario\": \"prueba\",\r\n    \"HashMobil\": \"1\",\r\n    \"Celular\": \"0980808131\",\r\n    \"CodigoAgencia\": \"1\",\r\n    \"CodigoCentro\": \"1\"\r\n  },\r\n  \"idToken\": 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7267/api/TokenManager/ObtenerTokenPorId",
+							"host": [
+								"https://localhost:7267"
+							],
+							"path": [
+								"api",
+								"TokenManager",
+								"ObtenerTokenPorId"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TokenManager/RefrescarToken",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"Auditoria\": {\r\n    \"IdentificadorGUID\": \"6927cb6e-70e6-4ba8-a485-7dd7c452e115\",\r\n    \"IdAplicacionCliente\": \"1111111111\",\r\n    \"Identificacion\": \"1111111111\",\r\n    \"codigoCanal\": \"2\",\r\n    \"codigoTransaccion\": \"307\",\r\n    \"codigoMedioInvocacion\": \"9\",\r\n    \"IpCliente\": \"1.1.1.1\",\r\n    \"Usuario\": \"prueba\",\r\n    \"HashMobil\": \"1\",\r\n    \"Celular\": \"0980808131\",\r\n    \"CodigoAgencia\": \"1\",\r\n    \"CodigoCentro\": \"1\"\r\n  },\r\n  \"idToken\": 89\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7267/api/TokenManager/RefrescarToken",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7267",
+							"path": [
+								"api",
+								"TokenManager",
+								"RefrescarToken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TokenManager/ActualizarInformacionToken",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Auditoria\": {\r\n        \"Usuario\": \"cmch2593\",\r\n        \"Fecha\": \"2025-02-03T16:56:52.0182859-05:00\",\r\n        \"IpCliente\": \"172.31.32.1\",\r\n        \"HashMobil\": null,\r\n        \"Celular\": null,\r\n        \"Identificacion\": null,\r\n        \"codigoCanal\": \"2\",\r\n        \"codigoTransaccion\": \"307\",\r\n        \"codigoMedioInvocacion\": \"9\",\r\n        \"IdentificadorUnicoOperacional\": null,\r\n        \"IdentificadorGUID\": \"b61708de-9fe9-4ef5-9a67-4be3f34f8f15\",\r\n        \"IdAplicacionCliente\": null,\r\n        \"CodigoAgencia\": null,\r\n        \"CodigoCentro\": null,\r\n        \"Ciudad\": null,\r\n        \"NombreDebitado\": null,\r\n        \"IdentificacionDebitado\": null,\r\n        \"TipoAplicacion\": 1,\r\n        \"GuidCliente\": \"\"\r\n    },\r\n    \"IdToken\": 1091,\r\n    \"NombreToken\": \"token Pruebas unitarias\",\r\n    \"Tags\": \"CuentaSalud|sadas|neuvotag\",\r\n    \"FechaInicio\": \"2025-02-03T17:30:00\",\r\n    \"FechaFin\": \"2025-02-15T20:30:00\",\r\n    \"Estado\": \"ACTIVO\",\r\n    \"Activo\": true,\r\n    \"LimiteUsos\": false,\r\n    \"NumLimiteUsos\": 0,\r\n    \"TipoAsociado\": \"ASESOR\",\r\n    \"CodigoAsociado\": \"MCRUZ\",\r\n    \"FechaModificacion\": \"2025-02-03T16:56:51.9230423-05:00\",\r\n    \"UsuarioModificacion\": \"cmch2593\",\r\n    \"DiasActualizaAuto\": \"L\",\r\n    \"TipoCalendarizacion\": \"DIARIO\",\r\n    \"FechaRefrescar\": \"2025-02-03T16:56:51.9230423-05:00\",\r\n    \"EmailAsociado\": \"mcruz@bgr.com.ec\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7267/api/TokenManager/ActualizarInformacionToken",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7267",
+							"path": [
+								"api",
+								"TokenManager",
+								"ActualizarInformacionToken"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TokenCalendarizado",
+			"item": [
+				{
+					"name": "ObtenerTokensCalendarizadosParaHoy",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"Auditoria\": {\r\n    \"IdentificadorGUID\": \"213123\",\r\n    \"IdAplicacionCliente\": \"aasdfasf\",\r\n    \"Identificacion\": \"1206384651\",\r\n    \"codigoCanal\": \"2\",\r\n    \"codigoTransaccion\": \"307\",\r\n    \"codigoMedioInvocacion\": \"9\",\r\n    \"ipCliente\": \"172.20.70.100\",\r\n    \"usuario\": \"bduarte\",\r\n    \"HashMobil\": \"false\",\r\n    \"Celular\": \"0992211294\",\r\n    \"codigoAgencia\": \"1\",\r\n    \"codigoCentro\": \"1\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7267/api/TokenCalendarizado/ObtenerTokensCalendarizadosParaHoy",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7267",
+							"path": [
+								"api",
+								"TokenCalendarizado",
+								"ObtenerTokensCalendarizadosParaHoy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TokenCalendarizado/ProcesarReenvioMasivoPorEmail",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"Auditoria\": {\r\n    \"IdentificadorGUID\": \"213123\",\r\n    \"IdAplicacionCliente\": \"aasdfasf\",\r\n    \"Identificacion\": \"1222222222\",\r\n    \"codigoCanal\": \"2\",\r\n    \"codigoTransaccion\": \"307\",\r\n    \"codigoMedioInvocacion\": \"9\",\r\n    \"ipCliente\": \"172.20.70.100\",\r\n    \"usuario\": \"bduarte\",\r\n    \"HashMobil\": \"false\",\r\n    \"Celular\": \"0000000000\",\r\n    \"codigoAgencia\": \"1\",\r\n    \"codigoCentro\": \"1\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7267/api/TokenCalendarizado/ReenviarNuevoTokenPorEmail",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7267",
+							"path": [
+								"api",
+								"TokenCalendarizado",
+								"ReenviarNuevoTokenPorEmail"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseApiUrl",
+			"value": "https://localhost:7267",
+			"type": "default"
+		}
+	]
+}
